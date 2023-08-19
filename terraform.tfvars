@@ -12,6 +12,9 @@ private_app_subnet_az2_cidr="10.0.3.0/24"
 private_data_subnet_az1_cidr="10.0.4.0/24"
 private_data_subnet_az2_cidr="10.0.5.0/24"
 
+# security group variables
+ssh_location="73.37.196.5/32"
+
 # rds variables
 database_snapshot_identifier="rentzone-ecs-final-snapshot"
 database_instance_class="db.t2.micro"
@@ -28,4 +31,7 @@ env_file_name="rentzone.env"
 
 # ecs variables
 architecture="X86_64"
-container_image="651783246143.dkr.ecr.us-east-1.amazonaws.com/rentzone:latest"
+container_image="703613185173.dkr.ecr.us-east-1.amazonaws.com/rentzone:latest"
+
+# route 53 variables
+record_name="www"
